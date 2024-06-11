@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="icon" type="image" href="./assets/Home.jpg" />
+ 
+    <title>Crunchybite</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init({
+              publicKey: "JjKndOeBXxWq5MCBF",
+            });
+        })();
+    </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav >
+        <div class="navbar">
+            <div class="logo">
+                <i class="fab fa-slack"></i>
+                <span class="logo_name">CrunchyBite</span>
+            </div>
+            <div class="navlinks">
+                <ul>
+                    <li class="hideonMobile"><a href="#home">Home</a></li>
+                    <li class="hideonMobile"><a href="#about">About</a></li>
+                    <li class="hideonMobile"> <a href="#service">Services</a></li>
+                    <li class="hideonMobile"><a href="#product">Product</a></li>
+                    <li class="hideonMobile"><a href="#contact">Contact</a></li>
+                    <li class="hideonDesktop"  onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+                </ul>
+            </div>
+
+        </div>
+         <!-- sidebsr menu -->
+         <div class="sidebar">
+            <div class="logo">
+                <h1>Logo</h1>
+                <a href="#" onclick="closeSidebar()"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a>
+            </div>
+            <div class="navlinks">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Product</li>
+                    <li>Contact</li>
+                    
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <section class="home">
+        <div class="content">
+            <h1>Crunchy Bite</h1>
+            <h4>Crispy and Tasty!!!</h4>
+            <a href="#product"><button>Explore</button></a>
+        </div>
+        <div class="home-image">
+            <img src="./assets/HDhome (1).png" alt="">
+        </div>
+    </section>
+
+    <section id="about" class="about-us">
+        <h1 class="header">
+            About Us
+        </h1>
+        <div class="content">
+
+            <div class="text">
+                <p>Welcome to Chipsvilla, where  passion meets flavor in every crispy bite. Founded in 2023 by Boluwagbe, we bring you the finest plantain chips inspired by our cultural heritage. Sourced from local farmers, our plaintains are sustainably grown and hand-picked for quality. We offera variety  of flavors, from classic salted to sugar and honey coated and also spicy, all made with natural ingredients and no artificial additives. Our chips are gluten-free, vegan and packed with nutrients. Thank you for choosing us, enjoy the taste of tradition and the crunch of quality in every bite</p>
+            </div>
+            <div class="img">
+                <img src="./assets/Home.jpg" alt="">
+            </div>
+        </div>
+
+    </section>
+
+    <section id="product" class="product">
+        <h1 class="header">Our Products</h1>
+        <div class="container">
+            <div class="card">
+                <img src="./assets/images (1).jpg" alt="">
+                <span class="name">Family Size</span>
+                <p class="size">1200g</p>
+                <p class="price">#2000</p>
+            </div>
+            <div class="card">
+                <img src="./assets/plantain2.jpg" alt="">
+                <span class="name">Jumbo Size</span>
+                <p class="size">700g</p>
+                <p class="price">#700</p>
+            </div>
+            <div class="card">
+                <img src="./assets/plaintain.jpg" alt="">
+                <span class="name">Mini Size</span>
+                <p class="size">300g</p>
+                <p class="price">#300</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="service" class="service">
+        <h1 class="title">Services</h1>
+        <div class="wrapper">
+            <div class="box">
+               <div class="front-face">
+                  <div class="icon">
+                     <i class="fas fa-boxes"></i>
+                  </div>
+                  <span>Wholesale Supply</span>
+               </div>
+               <div class="back-face">
+                  <span>Wholesale Supply</span>
+                  <p>
+                     Bulk plaintain chip orders for retailers and distributors. Enjoy competitive pricing and consisitent quality for your business needs.
+                  </p>
+               </div>
+            </div>
+            <div class="box">
+               <div class="front-face">
+                  <div class="icon">
+                     <i class="fas fa-utensils"></i>
+                  </div>
+                  <span>Event Catering</span>
+               </div>
+               <div class="back-face">
+                  <span>Event Catering</span>
+                  <p>
+                     Providing plantain chips for events and special occasions. Make your celebrations memorable with our delicious and healthy snacks.
+                  </p>
+               </div>
+            </div>
+            <div class="box">
+               <div class="front-face">
+                  <div class="icon">
+                     <i class="fas fa-calendar-alt"></i>
+                  </div>
+                  <span>Subscription Service</span>
+               </div>
+               <div class="back-face">
+                  <span>Subscription Service</span>
+                  <p>
+                     Regular delivery of plaintain chips to your doorstep. Never run out of your favorite snack with our hassle-free subscription plans
+                  </p>
+               </div>
+            </div>
+            <div class="box">
+                <div class="front-face">
+                   <div class="icon">
+                      <i class="fas fa-flask"></i>
+                   </div>
+                   <span>Custom Flavor</span>
+                </div>
+                <div class="back-face">
+                   <span>Custom Flavor</span>
+                   <p>
+                     Special flavor creation based on customer preferences. Let us know your desired taste, and we'll craft it just for you.
+                   </p>
+                </div>
+             </div>
+             <div class="box">
+                <div class="front-face">
+                   <div class="icon">
+                      <i class="fas fa-shopping-cart"></i>
+                   </div>
+                   <span>Online Orders</span>
+                </div>
+                <div class="back-face">
+                   <span>Online Orders</span>
+                   <p>
+                      Convenient online purchasing with the delivery options. Enjoy our plantian chips from the comfort of your home with just a few clicks.
+                   </p>
+                </div>
+             </div>
+             <div class="box">
+                <div class="front-face">
+                   <div class="icon">
+                      <i class="fas fa-tags"></i>
+                   </div>
+                   <span>Private Labeling</span>
+                </div>
+                <div class="back-face">
+                   <span>Private Labeling</span>
+                   <p>
+                      Custom branding and packaging for businesss. We help you create unique plantain chip products that reflect your brand identity.
+                   </p>
+                </div>
+             </div>
+         </div>
+    </section>
+
+    <section id="contact" class="contact">
+       
+        <div class="container">
+            <h1 class="title">
+                Contact us
+            </h1>
+            <div class="content">
+              <div class="left-side">
+                <div class="address details">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <div class="topic">Address</div>
+                  <div class="text-one">Obafemi Awolowo University</div>
+                  <div class="text-two">Ile-ife, Osun State.</div>
+                </div>
+                <div class="phone details">
+                  <i class="fas fa-phone-alt"></i>
+                  <div class="topic">Phone</div>
+                  <div class="text-one">+2349023643820</div>
+                  <div class="text-two">+2348057734324</div>
+                </div>
+                <div class="email details">
+                  <i class="fas fa-envelope"></i>
+                  <div class="topic">Email</div>
+                  <div class="text-one">chipvilla@gmail.com</div>
+                  <div class="text-two">adedokunfemi14@gmail.com</div>
+                </div>
+              </div>
+              <div class="right-side">
+                <div class="topic-text">Send us a message</div>
+                <p>If you have any complaint, you want to place an order or any types of enquries related, you can send me message from here. It's our pleasure to serve you.</p>
+              <form action="#">
+                <div class="input-box">
+                  <input id="fullName" type="text" placeholder="Enter your name">
+                </div>
+                <div class="input-box">
+                  <input id="email_id" type="text" placeholder="Enter your email">
+                </div>
+                <div  class="input-box message-box">
+                  <textarea id="message" name="" placeholder="Enter your message" id="" cols="30" rows="10"></textarea>
+                </div>
+                <div class="button">
+                  <input onclick="SendMail()" type="button" value="Send Now" >
+                </div>
+              </form>
+            </div>
+            </div>
+          </div>
+    </section>
+
+    <footer>
+        <div class="content">
+            <div class="top">
+            <div class="logo-details">
+                <i class="fab fa-slack"></i>
+                <span class="logo_name">CrunchyBite</span>
+            </div>
+            <div class="media-icons">
+                <a href="www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+                <a href="www.twitter.com"><i class="fab fa-twitter"></i></a>
+                <a href="www.instagram.com"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            </div>
+            <div class="link-boxes">
+            <ul class="box">
+                <li class="link_name">Company</li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#service">Service</a></li>
+                <li><a href="#about">About us</a></li>
+                <li><a href="#product">Product</a></li>
+            </ul>
+            <ul class="box">
+                <li class="link_name">Services</li>
+                <li><a href="#">Wholesale Supply</a></li>
+                <li><a href="#">Event Catering</a></li>
+                <li><a href="#">Custom Flavour</a></li>
+                <li><a href="#">Online Order</a></li>
+                <li><a href="#">Private Labeling</a></li>
+            </ul>
+            <ul class="box">
+                <li class="link_name">Enquries</li>
+                <li><a href="https://wa.me/gr/L3GYM5X4XEOYP1">Whatsapp</a></li>
+                <li><a href="www.facebook.com">Facebook</a></li>
+                <li><a href="tel:+2349023643820">Phone call</a></li>
+                <li><a href="mailto:adedokunfemi14@gmail.com">Mail</a></li>
+            </ul>
+           
+            </div>
+        </div>
+        <div class="bottom-details">
+            <div class="bottom_text">
+            <span class="copyright_text">Copyright © 2024 <a href="#">Group8</a>All rights reserved</span>
+            <span class="policy_terms">
+                <a href="#">Privacy policy</a>
+                <a href="#">Terms & condition</a>
+            </span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./index.js"></script>
+    
+</body>
+</html>
