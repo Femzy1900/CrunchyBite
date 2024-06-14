@@ -368,13 +368,14 @@ About us */
 }
 .product .container {
     display: grid;
-    margin: 50px 90px auto;
+    margin: 50px 60px auto;
     padding-bottom: 50px;
-    grid-gap: 50px;
+    grid-gap: 30px;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
 .product .card {
+  gap: 5px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -392,9 +393,9 @@ About us */
 
 
 .card img {
-    width: 100%;
-    height: 270px;
+    width: 70%;
     border-radius: 10px;
+    margin-bottom: 6px;
     
 }
 .product .card .name {
